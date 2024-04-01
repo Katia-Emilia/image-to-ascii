@@ -56,3 +56,7 @@ image_path = 'image.png'  # Change this to your image file path
 converter = Converter(image_path)
 ascii_image = converter.man()
 print(ascii_image)
+
+#print in file
+f = open("image.txt", "w")
+f.write(ascii_image)
