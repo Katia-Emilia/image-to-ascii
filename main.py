@@ -28,7 +28,7 @@ class Converter:
         return char_list
 
 
-    def man(self):
+    def main(self):
         try:
             image=Image.open(self.path)
         except Exception as e:
@@ -54,7 +54,7 @@ class Converter:
 # Example usage
 image_path = 'image.png'  # Change this to your image file path
 converter = Converter(image_path)
-ascii_image = converter.man()
+ascii_image = converter.main()
 print(ascii_image)
 
 #print in file
